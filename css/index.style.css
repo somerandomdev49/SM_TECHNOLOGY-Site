@@ -41,7 +41,7 @@ h1{
   font-weight: bold;
 }
 
-/* css for welcome-content - after 900px*/
+/* css for welcome-content - after 900px */
 @media screen and (min-width: 900px){
   #welcome-content{
     margin-top: 25vh;
@@ -68,7 +68,7 @@ h1{
   }
 }
 
-/* css for welcome-content - before 900px*/
+/* css for welcome-content - before 900px */
 @media screen and (max-width: 900px){
   #welcome-content{
     margin-top: 10vh;
@@ -95,7 +95,7 @@ h1{
   }
 }
 
-/* css for welcome-content - before 500px*/
+/* css for welcome-content - before 500px */
 @media screen and (max-width: 500px){
   #welcome-content{
     margin-top: 0;
