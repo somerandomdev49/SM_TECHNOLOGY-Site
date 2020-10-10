@@ -1,4 +1,15 @@
-// creating stars space
+// # Site for -SM_TECHNOLOGY-
+// smtechnologyofficialcontact@gmail.com
+// # Authors of the project:
+// 1-MachnevEgor_https://vk.com/machnev_egor
+// 2-NasekinEvgeniy_https://vk.com/nasek1n
+// 3-DmitryShalimov_https://vk.com/lookatstat
+// # Contacts in email:
+// 1-meb.official.com@gmail.com
+// 2-nasekinwhiteorblack@gmail.com
+// 3-dmitriy-shalimov@yandex.ru
+
+// creating stars space - script
 window.onload = function(){
 		var canvas = document.createElement("canvas"),
 			c = canvas.getContext("2d"),
@@ -48,3 +59,14 @@ window.onload = function(){
 			}
 		}, 30);
 	};
+
+	// # Site for -SM_TECHNOLOGY-
+	// smtechnologyofficialcontact@gmail.com
+	// # Authors of the project:
+	// 1-MachnevEgor_https://vk.com/machnev_egor
+	// 2-NasekinEvgeniy_https://vk.com/nasek1n
+	// 3-DmitryShalimov_https://vk.com/lookatstat
+	// # Contacts in email:
+	// 1-meb.official.com@gmail.com
+	// 2-nasekinwhiteorblack@gmail.com
+	// 3-dmitriy-shalimov@yandex.ru
