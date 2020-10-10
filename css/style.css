@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0 auto;
+    background-color: #121212;
+    text: arial;
+}
+
+canvas {
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: -1;
+}
+
+.container {
+    max-width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.block-content {
+    width: 1000px;
+    margin-top: 20%;
+}
+
+.block-content__logo {
+    display: inline-block;
+    perspective: 1000px;
+}
+
+.block-content__logo:hover .front {
+    transform: rotateY(180deg);
+}
+.block-content__logo:hover .back {
+    transform: rotateY(360deg);
+}
+
+.block-content__logo img {
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    border-style: dashed;
+    border-radius: 10px;
+    border-width: 4px;
+    border-color: #fff;
+    transition: 1s;
+}
+
+.front,
+.back {
+    backface-visibility: hidden;
+}
+
+.back {
+    position: absolute;
+    position: relative;
+    border-radius: 10px;
+    background-color: #171717;
+    border-style: dashed;
+    border-radius: 10px;
+    border-width: 4px;
+    border-color: #fff;
+    width: 280px;
+    height: 280px;
+    transform: rotateY(180deg);
+    transition: 1s;
+}
+
+.back img {
+    width: 100px;
+    height: 100px;
+    margin: 85px;
+    border-style: none;
+    border-radius: 0px;
+    border-width: 0px;
+}
+
+.block-content__text {
+    vertical-align: top;
+    margin-left: 150px;
+    display: inline-block;
+    width: 565px;
+}
+
+.block-content__text p {
+    padding: 10px 0px 10px 0px;
+    font-size: 25px;
+    text-align: center;
+    color: #fff;
+    font-style: comfortaa;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.block-content__text a {
+    text-transform: uppercase;
+    margin: auto;
+    padding: 12px 20px;
+    font-size: 24px;
+    text-decoration: none;
+    color: #8c9eff;
+    position: relative;
+    transition: all 0.3s cubic-bezier(0.2, 0, 0, 1);
+    z-index: 1;
+}
+
+.block-content__text a:after {
+    content: "";
+    display: block;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    right: 1.25rem;
+    left: 1.25rem;
+    background-color: #8c9eff;
+    border-radius: 15px;
+    transition: all 0.3s cubic-bezier(0.2, 0, 0, 1);
+    transform-origin: bottom center;
+    z-index: -1;
+}
+
+.block-content__text a:hover {
+    color: #ffffff;
+}
+
+.block-content__text a:hover::after {
+    right: 0;
+    left: 0;
+    height: 100%;
+}
+
+.block-content__text img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+}
