@@ -41,7 +41,7 @@ canvas {
 
 .block-content {
     width: 1000px;
-    margin-top: 20%;
+    margin-top: 25vh;
 }
 
 .block-content__logo {
@@ -264,26 +264,26 @@ canvas {
     .block-content__text {
         width: 300px;
         margin-top: 20%;
-        left: 60px;
+        left: 50px;
     }
     .block-content__logo {
         left: 0px;
     }
     .block-content__logo img {
-        width: 400px;
-        height: 400px;
+        width: auto;
+        height: 375px;
     }
     .back {
-        width: 400px;
-        height: 400px;
+        width: 375px;
+        height: 375px;
     }
     .back img {
         width: 200px;
         height: 200px;
-        margin: 95px;
+        margin: 83px;
     }
     .block-content__logo {
-        width: 400px;
+        width: auto;
         left: 0px;
     }
 }
