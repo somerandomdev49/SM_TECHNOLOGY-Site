@@ -14,6 +14,7 @@ smtechnologyofficialcontact@gmail.com
 * {
     padding: 0;
     margin: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -45,13 +46,16 @@ canvas {
 
 .block-content__logo {
     display: inline-block;
+    -webkit-perspective: 1000px;
     perspective: 1000px;
 }
 
 .block-content__logo:hover .front {
+    -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
 }
 .block-content__logo:hover .back {
+    -webkit-transform: rotateY(360deg);
     transform: rotateY(360deg);
 }
 
@@ -63,11 +67,14 @@ canvas {
     border-radius: 10px;
     border-width: 4px;
     border-color: #fff;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
     transition: 1s;
 }
 
 .front,
 .back {
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
 
@@ -82,7 +89,10 @@ canvas {
     border-color: #fff;
     width: 280px;
     height: 280px;
+    -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
+    -webkit-transition: 1s;
+    -o-transition: 1s;
     transition: 1s;
 }
 
@@ -120,6 +130,8 @@ canvas {
     text-decoration: none;
     color: #8c9eff;
     position: relative;
+    -webkit-transition: all 0.3s cubic-bezier(0.2, 0, 0, 1);
+    -o-transition: all 0.3s cubic-bezier(0.2, 0, 0, 1);
     transition: all 0.3s cubic-bezier(0.2, 0, 0, 1);
     z-index: 1;
 }
@@ -134,7 +146,11 @@ canvas {
     left: 1.25rem;
     background-color: #8c9eff;
     border-radius: 15px;
+    -webkit-transition: all 0.3s cubic-bezier(0.2, 0, 0, 1);
+    -o-transition: all 0.3s cubic-bezier(0.2, 0, 0, 1);
     transition: all 0.3s cubic-bezier(0.2, 0, 0, 1);
+    -webkit-transform-origin: bottom center;
+    -ms-transform-origin: bottom center;
     transform-origin: bottom center;
     z-index: -1;
 }
