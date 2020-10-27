@@ -11,6 +11,7 @@ smtechnologyofficialcontact@gmail.com
 3-dmitriy-shalimov@yandex.ru
 */
 
+/* the major styles */
 * {
     padding: 0;
     margin: 0;
@@ -43,8 +44,7 @@ canvas {
     margin-top: 25vh;
 }
 
-/*          LOGO STYLES          */
-
+/* styles and animation for the logotype */
 .block-content__logo {
     display: inline-block;
     -webkit-perspective: 1000px;
@@ -106,10 +106,30 @@ canvas {
     border-width: 0px;
 }
 
-/*          LOGO STYLES          */
+/* typing in when the page starts */
+.typewriter {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden;
+  border-right: .15em solid white;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation:
+    typing 2s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
 
-/*          TEXT STYLES          */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
 
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white }
+}
+
+/* styles for all text */
 .block-content__text {
     vertical-align: top;
     margin-left: 150px;
@@ -176,8 +196,7 @@ canvas {
     height: 40px;
 }
 
-/*          TEXT STYLES          */
-
+/* media changes for different screen types */
 @media only screen and (max-width: 1200px) {
     .block-content {
         width: 980px;
@@ -190,7 +209,7 @@ canvas {
     }
 }
 
-/* Medium Devices, Desktops */
+/* medium devices, desktops */
 @media only screen and (max-width: 992px) {
     .container {
         max-width: 830px;
@@ -223,7 +242,7 @@ canvas {
     }
 }
 
-/* Small Devices, Tablets */
+/* small devices, tablets */
 @media only screen and (max-width: 768px) {
     .container {
         max-width: 700px;
@@ -255,7 +274,7 @@ canvas {
     }
 }
 
-/* Extra Small Devices, Phones */
+/* extra small devices, phones */
 @media only screen and (max-width: 480px) {
     .container {
         max-width: 375px;
