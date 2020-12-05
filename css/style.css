@@ -22,7 +22,7 @@ smtechnologyofficialcontact@gmail.com
 body {
     overflow-x: hidden;
     margin: 0 auto;
-    background-color: #121212;
+    background-color: #000000;
 }
 
 canvas {
@@ -83,7 +83,7 @@ canvas {
     position: absolute;
     position: relative;
     border-radius: 10px;
-    background-color: #171717;
+    background-color: #000000;
     border-style: dashed;
     border-radius: 10px;
     border-width: 4px;
