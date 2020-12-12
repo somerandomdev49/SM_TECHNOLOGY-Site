@@ -34,8 +34,18 @@ canvas {
     z-index: -1;
 }
 
+iframe {
+  width: 100vw;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #000000;
+}
+
 .container {
     max-width: 1000px;
+    min-height: 100vh;
     margin: 0 auto;
 }
 
