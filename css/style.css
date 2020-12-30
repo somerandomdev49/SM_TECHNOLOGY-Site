@@ -239,11 +239,6 @@ canvas {
         width: 400px;
         height: 400px;
     }
-    .back img {
-        width: 200px;
-        height: 200px;
-        margin: 95px;
-    }
 }
 
 /* Small devices, tablets */
@@ -270,11 +265,6 @@ canvas {
     .back {
         width: 450px;
         height: 450px;
-    }
-    .back img {
-        width: 200px;
-        height: 200px;
-        margin: 120px;
     }
 }
 
@@ -306,11 +296,6 @@ canvas {
     .back {
         width: 375px;
         height: 375px;
-    }
-    .back img {
-        width: 200px;
-        height: 200px;
-        margin: 83px;
     }
 }
 
