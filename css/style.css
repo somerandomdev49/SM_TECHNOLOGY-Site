@@ -235,6 +235,10 @@ canvas {
         display: block;
         margin: 70px auto;
     }
+    .back {
+        width: 400px;
+        height: 400px;
+    }
 }
 
 /* Small devices, tablets */
@@ -257,6 +261,10 @@ canvas {
     .block-content__text {
         display: block;
         margin: 70px auto;
+    }
+    .back {
+        width: 450px;
+        height: 450px;
     }
 }
 
@@ -282,6 +290,10 @@ canvas {
         margin-bottom: 70px;
     }
     .block-content__logo img {
+        width: 375px;
+        height: 375px;
+    }
+    .back {
         width: 375px;
         height: 375px;
     }
