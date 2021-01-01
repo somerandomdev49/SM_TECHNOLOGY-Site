@@ -1,0 +1,325 @@
+/*
+# Site for -SM_TECHNOLOGY-
+smtechnologyofficialcontact@gmail.com
+# Authors of the project:
+1-MachnevEgor_https://vk.com/machnev_egor
+2-NasekinEvgeniy_https://vk.com/nasek1n
+3-DmitryShalimov_https://vk.com/lookatstat
+# Contacts in email:
+1-meb.official.com@gmail.com
+2-nasekinwhiteorblack@gmail.com
+3-dmitriy-shalimov@yandex.ru
+*/
+
+/* The major styles */
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0 auto;
+    background-color: #000000;
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: -1;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #000000;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.block-content {
+    width: 1000px;
+    margin-top: 25vh;
+}
+
+/* Styles and animation for the logotype */
+.block-content__logo {
+    display: inline-block;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+}
+
+.block-content__logo img {
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    border-style: dashed;
+    border-radius: 10px;
+    border-width: 4px;
+    border-color: #fff;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+}
+
+.block-content__logo:hover .front {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+.block-content__logo:hover .back {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+}
+
+.front,
+.back {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.back {
+    position: absolute;
+    position: relative;
+    border-radius: 10px;
+    background-color: #000000;
+    border-style: dashed;
+    border-radius: 10px;
+    border-width: 4px;
+    border-color: #fff;
+    width: 280px;
+    height: 280px;
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+}
+
+.back img {
+    width: 100%;
+    height: 100%;
+    border-style: none;
+    border-radius: 0px;
+    border-width: 0px;
+}
+
+/* Typing in when the page starts */
+.typewriter {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden;
+  border-right: .15em solid white;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation:
+    typing 2s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white }
+}
+
+/* Styles for all text */
+.block-content__text {
+    vertical-align: top;
+    margin-left: 150px;
+    display: inline-block;
+    width: 565px;
+}
+
+.block-content__text p {
+    padding: 10px 0px 10px 0px;
+    font-size: 25px;
+    text-align: center;
+    color: #fff;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.block-content__text a {
+    text-transform: uppercase;
+    margin: auto;
+    padding: 12px 20px;
+    font-size: 24px;
+    text-decoration: none;
+    color: #8c9eff;
+    position: relative;
+    -webkit-transition: all 0.3s cubic-bezier(0.2, 0, 0, 1);
+    -o-transition: all 0.3s cubic-bezier(0.2, 0, 0, 1);
+    transition: all 0.3s cubic-bezier(0.2, 0, 0, 1);
+    z-index: 1;
+}
+
+.block-content__text a:after {
+    content: "";
+    display: block;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    right: 1.25rem;
+    left: 1.25rem;
+    background-color: #8c9eff;
+    border-radius: 15px;
+    -webkit-transition: all 0.3s cubic-bezier(0.2, 0, 0, 1);
+    -o-transition: all 0.3s cubic-bezier(0.2, 0, 0, 1);
+    transition: all 0.3s cubic-bezier(0.2, 0, 0, 1);
+    -webkit-transform-origin: bottom center;
+    -ms-transform-origin: bottom center;
+    transform-origin: bottom center;
+    z-index: -1;
+}
+
+.block-content__text a:hover {
+    color: #ffffff;
+}
+
+.block-content__text a:hover::after {
+    right: 0;
+    left: 0;
+    height: 100%;
+}
+
+.block-content__text img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+}
+
+/* Media changes for different screen types */
+@media only screen and (max-width: 1200px) {
+    .block-content {
+        width: 980px;
+    }
+    .block-content__logo {
+        width: 300px;
+    }
+    .block-content__text {
+        margin-left: 100px;
+    }
+}
+
+/* Medium devices, desktops */
+@media only screen and (max-width: 992px) {
+    .container {
+        max-width: 830px;
+    }
+    .block-content {
+        margin-top: 10%;
+        width: 900px;
+    }
+    .block-content__logo img {
+        width: 400px;
+        height: 400px;
+    }
+    .block-content__logo {
+        width: 400px;
+        display: block;
+        margin: 70px auto;
+    }
+    .block-content__text {
+        display: block;
+        margin: 70px auto;
+    }
+    .back {
+        width: 400px;
+        height: 400px;
+    }
+    .back img {
+        width: 390px;
+        height: 390px;
+    }
+}
+
+/* Small devices, tablets */
+@media only screen and (max-width: 768px) {
+    .container {
+        max-width: 700px;
+    }
+    .block-content {
+        width: 700px;
+    }
+    .block-content__logo {
+        width: 450px;
+        display: block;
+        margin: 70px auto;
+    }
+    .block-content__logo img {
+        width: 450px;
+        height: 450px;
+    }
+    .block-content__text {
+        display: block;
+        margin: 70px auto;
+    }
+    .back {
+        width: 450px;
+        height: 450px;
+    }
+    .back img {
+        width: 440px;
+        height: 440px;
+    }
+}
+
+/* Extra small devices, phones */
+@media only screen and (max-width: 480px) {
+    .container {
+        max-width: 375px;
+    }
+    .block-content {
+        width: 375px;
+        margin-top: 0%;
+    }
+    .block-content__logo {
+        width: 375px;
+        display: block;
+        margin: 0px auto;
+    }
+    .block-content__text {
+        width: 320px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 20%;
+        margin-bottom: 70px;
+    }
+    .block-content__logo img {
+        width: 375px;
+        height: 375px;
+    }
+    .back {
+        width: 375px;
+        height: 375px;
+    }
+    .back img {
+        width: 365px;
+        height: 365px;
+    }
+}
+
+/*
+# Site for -SM_TECHNOLOGY-
+smtechnologyofficialcontact@gmail.com
+# Authors of the project:
+1-MachnevEgor_https://vk.com/machnev_egor
+2-NasekinEvgeniy_https://vk.com/nasek1n
+3-DmitryShalimov_https://vk.com/lookatstat
+# Contacts in email:
+1-meb.official.com@gmail.com
+2-nasekinwhiteorblack@gmail.com
+3-dmitriy-shalimov@yandex.ru
+*/
