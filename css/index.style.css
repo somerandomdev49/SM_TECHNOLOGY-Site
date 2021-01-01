@@ -34,6 +34,10 @@ canvas {
     z-index: -1;
 }
 
+iframe {
+  width: 100%;
+}
+
 ::-webkit-scrollbar {
     width: 12px;
     background-color: #000000;
@@ -46,6 +50,7 @@ canvas {
 
 .block-content {
     width: 1000px;
+    min-height: 100vh;
     margin-top: 25vh;
 }
 
@@ -198,6 +203,11 @@ canvas {
     vertical-align: middle;
     width: 40px;
     height: 40px;
+}
+
+/* Some information is available about the server */
+.server-info {
+  width: 100%;
 }
 
 /* Media changes for different screen types */
