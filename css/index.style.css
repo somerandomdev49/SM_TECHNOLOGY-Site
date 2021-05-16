@@ -119,24 +119,21 @@ canvas {
 /* Typing in when the page starts */
 .typewriter {
   color: #fff;
-  font-family: monospace;
+  font-family: "Ubuntu Mono", monospace;
   overflow: hidden;
-  border-right: .15em solid white;
   margin: 0 auto;
   letter-spacing: .15em;
-  animation:
-    typing 2s steps(30, end),
-    blink-caret .5s step-end infinite;
 }
 
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+.caret {
+    width: 10px;
+    height: 1em;
+    border-left: 3px solid white;
+    animation: caret-blink 1s infinite;
 }
 
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: white }
+@keyframes caret-blink {
+    50% { opacity: 0; }
 }
 
 /* Styles for all text */
@@ -152,7 +149,7 @@ canvas {
     font-size: 25px;
     text-align: center;
     color: #fff;
-    font-family: monospace;
+    font-family: "Ubuntu Mono", monospace;
     font-weight: bold;
 }
 
@@ -266,7 +263,6 @@ canvas {
         width: 700px;
     }
     .block-content__logo {
-        width: 450px;
         display: block;
         margin: 70px auto;
     }
