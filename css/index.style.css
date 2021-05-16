@@ -263,6 +263,7 @@ canvas {
         width: 700px;
     }
     .block-content__logo {
+        width: 450px;
         display: block;
         margin: 70px auto;
     }
